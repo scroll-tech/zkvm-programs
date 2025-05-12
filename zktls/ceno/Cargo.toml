@@ -1,0 +1,15 @@
+[package]
+name = "zktls-sp1"
+version = "0.2.5"
+edition = "2021"
+
+[dependencies]
+zktls-replayable-tls = { version = "0.2.2", path = "../../crates/zktls/replayable-tls" }
+ceno_rt = { git = "https://github.com/scroll-tech/ceno.git" }
+rkyv = { version = "0.8", default-features = false, features = [
+  "alloc",
+  "bytecheck",
+] }
+rsa = "0.9.6"
+
+[workspace]
